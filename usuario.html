@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>SuperCell - Tudo para o seu Smartphone</title>
+</head>
+<body>
+    <div class="container-usuario">
+        <h2>Solicitar Serviço</h2>
+        <form class="row g-3">
+            <div class="col-md-12">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="col-md-6">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="telefone">
+            </div>
+            <div class="col-md-6">
+            <label for="opcao" class="form-label">Serviço</label>
+            <select id="opcao" class="form-select">
+                <option selected>Selecione...</option>
+                <option value="Aplicativos">Aplicativos</option>
+                <option value="Armazenamento">Armazenamento</option>
+                <option value="Lentidão">Lentidão</option>
+                <option value="Superaquecimento">Superaquecimento</option>
+                <option value="Tela Quebrada">Tela Quebrada</option>
+                <option value="Outros">Outros</option>
+            </select>
+            </div>
+            <div class="col-6">
+            <button class="btn btn-primary" onclick="addData();">Confirmar</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-warning" onclick="retornar();">Retornar</button>
+            </div>
+        </form>
+        <table id="listTable" class="table table-striped table-light" style="display: none;">
+		
+        </table>
+      </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="js/funcao.js"></script>
